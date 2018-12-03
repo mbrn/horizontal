@@ -1,0 +1,30 @@
+{
+  "name": "horizontal",
+  "version": "0.1.0",
+  "description": "A package that analyze and gives information about browser width such as screen type (XS, SM, MD, LG)",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrn/horizontal.git"
+  },
+  "keywords": [
+    "horizontal",
+    "screen",
+    "width",
+    "x-axis",
+    "screen-type",
+    "javascript"
+  ],
+  "author": "Mehmet Baran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrn/horizontal/issues"
+  },
+  "homepage": "https://github.com/mbrn/horizontal#readme",
+  "devDependencies": {
+    "typescript": "^3.2.1"
+  }
+}
