@@ -1,6 +1,6 @@
 {
   "name": "horizontal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A package that analyze and gives information about browser width such as screen type (XS, SM, MD, LG)",
   "main": "./dist/index.js",
   "scripts": {
