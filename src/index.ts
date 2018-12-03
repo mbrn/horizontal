@@ -1,3 +1,3 @@
 export { Horizontal } from './horizontal';
-export { ScreenData } from './screen-data';
-export { ScreenType } from './screen-type';
+export { WindowData } from './window-data';
+export { WindowWidthType } from './window-width-type';

@@ -1,5 +1,5 @@
-import { ScreenType } from "./screen-type";
-import { ScreenData } from "./screen-data";
+import { WindowWidthType } from "./window-width-type";
+import { WindowData } from "./window-data";
 
 export class Horizontal {
   private static defaults = {
@@ -10,33 +10,33 @@ export class Horizontal {
     }
   }
 
-  static getData(): ScreenData {
+  static getData(): WindowData {
     const width = this.getWidth();
     return {
       width,
-      screenType: this.getType(width)
-    } as ScreenData;    
+      widthType: this.getType(width)
+    } as WindowData;    
   }
 
-  static getType(width?: number) : ScreenType {
+  static getType(width?: number) : WindowWidthType {
     if(!width) {
       width = this.getWidth();
     }
     
     // @ts-ignore
     if(width < this.defaults.screenType.xs) {
-      return ScreenType.XS;
+      return WindowWidthType.XS;
     }
     // @ts-ignore
     else if(width < this.defaults.screenType.sm) {
-      return ScreenType.SM;
+      return WindowWidthType.SM;
     }
     // @ts-ignore
     else if(width < this.defaults.screenType.md) {
-      return ScreenType.MD;
+      return WindowWidthType.MD;
     }
 
-    return ScreenType.LG
+    return WindowWidthType.LG
   }
 
   static setDefaults(xs: number, sm: number, md: number) {
