@@ -24,9 +24,17 @@ To install horizontal with `yarn`:
 ```js
 import { Horizontal, ScreenType } from 'horizontal'
 
+// Set defaults
+// Horizontal.setDefaults(600, 900, 1100); xs < 600, sm < 900, md < 1100
+
 if(Horizontal.getType() == ScreenType.MD) {
-  // screen is medium sized
+  // screen is medium size
 }
+
+const data = Horizontal.getData();
+console.log(data.width); // Available width of window
+
+
 ```
 
 ## Contributing
