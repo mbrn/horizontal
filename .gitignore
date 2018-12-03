@@ -1,3 +1,7 @@
 node_modules
 dist
 package-lock.json
+.travis.yml
+LICENCE
+README.md
+tsconfig.json
