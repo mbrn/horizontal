@@ -1,6 +1,6 @@
 export enum WindowWidthType {
-  XS,
-  SM,
-  MD,
-  LG
+  XS = "XS",
+  SM = "SM",
+  MD = "MD",
+  LG = "LG"
 }
